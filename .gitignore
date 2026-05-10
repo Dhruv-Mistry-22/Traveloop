@@ -1,7 +1,19 @@
+# Dependencies
 node_modules
+**/node_modules/
+
+# Secrets — never commit
 .env
+**/.env
+!.env.example
+
+# Build / coverage
 dist
 build
 coverage
+
+# Logs / OS
 logs
 *.log
+.DS_Store
+Thumbs.db
