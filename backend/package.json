@@ -1,0 +1,28 @@
+{
+  "name": "traveloop-database",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Traveloop PostgreSQL layer (Prisma + Neon)",
+  "type": "commonjs",
+  "scripts": {
+    "postinstall": "prisma generate",
+    "db:generate": "prisma generate",
+    "db:migrate:dev": "prisma migrate dev",
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "db:seed": "node prisma/seed.js",
+    "db:reset": "prisma migrate reset"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.3"
+  }
+}
